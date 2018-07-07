@@ -1,0 +1,31 @@
+using System;
+class circle
+{
+   static float pie1 = 3.14F;
+    int radius;
+    public circle(int radius2)
+    {
+        this.radius = radius2;
+    }
+    public float calc()
+    {
+        return circle.pie1 * radius * radius;
+    }
+}
+
+  class Program
+ {
+  static void Main()
+      {
+          circle ss = new circle(3);
+        float area = ss.calc();
+        Console.WriteLine("area ={0}",area);  
+
+
+        circle ss1 = new circle(8);
+        float area1 = ss1.calc();
+        Console.WriteLine("area ={0}", area1);
+
+  }
+   }
+ 

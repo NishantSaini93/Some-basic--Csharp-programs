@@ -1,0 +1,91 @@
+implicit:
+using System;
+
+  class Program
+ {
+  static void Main()
+  {
+      int ss = 1233;
+      float tt = ss;
+      Console.WriteLine("answer is={0}",tt);
+
+
+   }
+ }
+
+
+
+
+explicit: 1 way  it does not throw exception
+using System;
+
+  class Program
+ {
+  static void Main()
+  {
+      float ss = 1233.22F;
+      int tt = (int)ss;
+      Console.WriteLine("answer is={0}",tt);
+
+
+   }
+ }
+
+
+
+2nd way: it throw exception
+
+using System;
+
+  class Program
+ {
+  static void Main()
+  {
+      float ff = 123.232F;
+      int tt = Convert.ToInt32(ff);
+      Console.WriteLine("answer is={0}",tt);
+
+
+   }
+ }
+
+
+3rd way
+using System;
+
+  class Program
+ {
+  static void Main()
+  {
+      string dd = "100";
+      int tt = int.Parse(dd);
+      Console.WriteLine("answer is {0}",tt);
+
+
+   }
+ }
+
+
+
+4rt way 
+
+using System;
+
+  class Program
+ {
+  static void Main()
+  {
+      string dd = "100tg";
+      int tt=0;
+    bool v  = int.TryParse(dd,out tt);
+    if (v)
+    {
+        Console.WriteLine("answer is {0}", tt);
+    }
+    else
+    {
+        Console.WriteLine("invalid number");
+    }
+
+   }
+ }

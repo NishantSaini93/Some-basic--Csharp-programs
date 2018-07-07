@@ -1,0 +1,27 @@
+using System;
+
+  class Program
+ {
+  static void Main()
+  {
+      Program p = new Program();
+      Program.evnno(30);
+
+      int sum = Program.add(20, 50);
+      Console.WriteLine(sum);
+      }
+
+  public static int add(int a, int b)
+  {return(a+b);
+  }
+  public static void evnno(int tar)
+  {
+      int str = 0;
+      while (str <= tar)
+      {
+          Console.WriteLine(str);
+          str=str+2;
+      }
+  }
+   }
+ 

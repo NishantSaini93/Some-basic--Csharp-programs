@@ -1,0 +1,29 @@
+using System;
+
+class cus
+{ string fn1;
+    string lt1;
+   public cus(string fn2, string lt2)
+    {
+        this.fn1 = fn2;
+        this.lt1 = lt2;
+    }
+    public void println()
+    {
+        Console.WriteLine("{0}",this.fn1+" "+this.lt1);
+    }
+    ~cus()
+    {
+    }
+}
+  class Program
+ {
+  static void Main()
+      {
+          cus gg = new cus("nishant", "saini");
+          gg.println();
+       
+  }
+  
+   }
+ 

@@ -1,0 +1,99 @@
+4 types of method parameter:
+
+1.value parameters
+2. reference parameters
+3. out parameters
+4.parameters array
+
+
+
+
+1 value : makes the copy and work on it ...
+using System;
+
+  class Program
+ {
+  static void Main()
+  {
+      int i = 0;
+      nu(i);
+      Console.WriteLine(i);
+
+  }
+  public static void nu(int j)
+  {
+      j = 101;
+  }
+   }
+ 
+
+
+reference:
+using System;
+
+  class Program
+ {
+  static void Main()
+  {
+      int i = 0;
+      nu(ref i);
+      Console.WriteLine( i);
+
+  }
+  public static void nu(ref int j)
+  {
+      j = 101;
+  }
+   }
+ 
+  it work on original value :-)
+
+
+out parameter:
+using System;
+
+  class Program
+ {
+  static void Main()
+      {
+          int ss = 0;
+          int pp = 0;
+      cal(10,20,out ss,out pp);
+      Console.WriteLine("sum={0}&&product={1}",ss,pp);
+
+  }
+  public static void cal(int s, int p, out int ss, out int pp)
+  {
+      ss = s + p;
+      pp = s * p;
+  }
+   }
+ 
+
+array:
+
+using System;
+
+  class Program
+ {
+  static void Main()
+      {int[] yum=new int[3];
+      yum[0] = 22;
+      yum[1] = 33;
+      yum[2] = 44;
+      pm(yum);
+        
+
+  }
+  public static void pm(params int[] no)
+  {
+      Console.WriteLine("there ar {0} elements",no.Length);
+      foreach (int k in no)
+      {
+          Console.WriteLine(k);
+      }
+  }
+  
+   }
+ 
+

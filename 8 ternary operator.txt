@@ -1,0 +1,40 @@
+using System;
+
+  class Program
+ {
+  static void Main()
+  {
+      int no = 1;
+      bool r;
+      if (no == 10)
+      {
+          r = true;
+      }
+      else
+      {
+          r = false;
+      }
+      Console.WriteLine("aswer is {0}",r);
+   }
+ }
+
+
+
+
+
+
+// when we used ternary operator
+
+
+using System;
+
+  class Program
+ {
+  static void Main()
+  {
+      int no = 1;
+      bool r = no == 10 ? true : false;
+      
+      Console.WriteLine("answer is {0}",r);
+   }
+ }

@@ -1,0 +1,20 @@
+using System;
+
+  class Program
+ {
+  static void Main()
+  {
+      int[] no= new int[3];
+      no[0] = 1;
+      no[1] = 2;
+      no[2] = 3;
+      foreach(int k in no)
+      {Console.WriteLine(k);
+      }
+
+
+      }
+   
+
+   }
+ 

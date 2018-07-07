@@ -1,0 +1,18 @@
+using System;
+
+  class Program
+ {
+  static void Main()
+  {
+      int[] bagwan= new int[3];
+      bagwan[0] = 1;
+      bagwan[1] = 3;
+      bagwan[2] = 5;
+      for (int i = 0; i <= 2; i++)
+      {
+          Console.WriteLine("{0}\n", bagwan[i]);
+      }
+   
+
+   }
+ }

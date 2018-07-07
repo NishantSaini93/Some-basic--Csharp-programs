@@ -1,0 +1,41 @@
+using System;
+
+  class Program
+ {
+  static void Main()
+      {
+          projectA.teamA.classA.print();
+          projectA.teamB.classA.print();
+  }
+  
+   }
+  namespace projectA
+  {
+      namespace teamA
+      {
+          class classA
+          {
+              public static void print()
+              {
+                  Console.WriteLine("method 1");
+              }
+
+      }
+      }
+  }
+  namespace projectA
+  {
+      namespace teamB
+      {
+          class classA
+          {
+              public static void print()
+              {
+                  Console.WriteLine("method 2");
+              }
+
+          }
+      }
+  }
+ 
+ 

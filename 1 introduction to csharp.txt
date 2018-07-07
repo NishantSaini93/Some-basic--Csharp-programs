@@ -1,0 +1,8 @@
+using System;   // namespace :contains classes ,struct ,construct ,delegates and other namespace
+  class Program
+ {
+  static void Main()
+  {
+      Console.WriteLine("Welcome to c sharp training");
+   }
+ }

@@ -1,0 +1,42 @@
+using System;
+using PAT= projectA.teamA;
+using PAN=projectA.teamB;
+  class Program
+ {
+  static void Main()
+      {
+         PAT.classA.print();
+         PAN.classA.print();
+  }
+  
+   }
+  namespace projectA
+  {
+      namespace teamA
+      {
+          class classA
+          {
+              public static void print()
+              {
+                  Console.WriteLine("method 1");
+              }
+
+      }
+      }
+  }
+  namespace projectA
+  {
+      namespace teamB
+      {
+          class classA
+          {
+              public static void print()
+              {
+                  Console.WriteLine("method 2 ");
+              }
+
+          }
+      }
+  }
+ 
+ 

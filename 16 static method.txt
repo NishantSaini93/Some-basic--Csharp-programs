@@ -1,0 +1,23 @@
+using System;
+
+  class Program
+ {
+  static void Main()
+  {
+      Program p = new Program();
+      Program.evnno();
+
+
+      }
+
+  public static void evnno()
+  {
+      int str = 0;
+      while (str <= 20)
+      {
+          Console.WriteLine(str);
+          str=str+2;
+      }
+  }
+   }
+ 

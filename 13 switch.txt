@@ -1,0 +1,24 @@
+using System;
+
+  class Program
+ {
+  static void Main()
+  {
+      Console.WriteLine("please enter the number");
+      int no = int.Parse(Console.ReadLine());
+      switch (no)
+      {case 10:
+              Console.WriteLine("10");
+              break;
+          case 20:
+              Console.WriteLine("20");
+              break;
+          default :
+              Console.WriteLine("wrong choice");
+              break;
+
+      }
+   
+
+   }
+ }

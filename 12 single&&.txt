@@ -1,0 +1,9 @@
+&&
+||        these checks only first condition are fast
+
+
+
+&
+|         these will check  both the condition 
+
+are slow therefor
