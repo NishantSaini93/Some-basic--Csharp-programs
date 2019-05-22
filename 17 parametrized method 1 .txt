@@ -1,0 +1,18 @@
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Program p = new Program();
+            string st = "hello world";
+            p.display(st);
+
+        }
+
+        void display(string Tx)
+        {
+            Console.WriteLine(Tx);
+        }
+    }
+}
