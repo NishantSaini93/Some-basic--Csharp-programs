@@ -6,6 +6,7 @@ using System;
   {
       Program p = new Program();
       Program.evnno();
+      evnno();//we do not need reference to call static method
 
 
       }
